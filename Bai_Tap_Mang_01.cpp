@@ -1,4 +1,9 @@
-/*Bai tap Mang*/
+/*Bai tap Mang
+1: Nhập mảng
+2: In mảng
+3: Giai thừa
+4: Chuỗi
+5: Tính tiền điện */
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
@@ -6,7 +11,7 @@ void  NhapMang(int arr[100],int n){
 	int i;
 	for ( i = 0; i < n; ++i){
 		printf("a[%d] = ",i);
-		scanf("%d",& arr[i]);		
+		scanf("%d",& arr[i]);	
 	}
 }
 void InMang(int arr[100],int n){
