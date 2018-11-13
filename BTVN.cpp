@@ -30,13 +30,20 @@ float TinhTong_TrungBinh(float *arr, int n){
 	for (int i=0; i<n;i+=2){
 		s=s+arr[i];
 	}
-	printf("Tong cac phan tu o vi tri chan : %.0f", s);
+	printf("\nTong cac phan tu o vi tri chan : %.0f", s);
 	k=s/(n/2);
-	printf("Trung binh = %.0f", k);
+	printf("\nTrung binh = %.0f", k);
 }
 
 int main(){
 	int n;
+	/*De cap phat vung nho cho con tro , ta dùng cac ham sau trong thu vien stlib.h.
+	- malloc : (ten con tro) = (kieu con tro *) malloc ( sizeof (kieu con tro ) );
+	- calloc : (ten con tro) = (kieu con tro *) malloc ( n, sizeof (kieu con tro ) );
+	chú thích: -trong do, sizeof(kieu con tro) la kich thuoc cua kieu 
+				- n la so lan cua sizeof(kieu con tro) duoc cap
+*/
+
     float *p=(float *) malloc (10*sizeof(float));
 	printf("Nhap n: ");
 	scanf("%d",&n);
