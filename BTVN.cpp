@@ -32,7 +32,7 @@ float TinhTong_TrungBinh(float *arr, int n){
 	}
 	printf("\nTong cac phan tu o vi tri chan : %.0f", s);
 	k=s/(n/2);
-	printf("\nTrung binh = %.0f", k);
+	printf("\nTrung binh = %f", (float)k);
 }
 
 int main(){
